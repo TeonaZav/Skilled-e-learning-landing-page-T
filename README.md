@@ -19,7 +19,7 @@ Our challenge was to build out this e-learning landing page using any tools, and
 
 ### Screenshot
 
-![](assets/screenshot.JPG)
+![](skilled-elearning-landing-page/assets/screenshot.JPG)
 
 ## My process
 
