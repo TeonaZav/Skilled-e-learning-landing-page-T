@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Montserrat&family=Outfit:wght@700&family=Plus+Jakarta+Sans:wght@500;700;800&family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+/*GENETALS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  background-color: rgb(244, 247, 247);
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  font-weight: 500;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  width: 144rem;
+  background-color: #f2f2f2;
+  margin: 0 auto;
+}
+/*HEADER AND FOOTER */
+.logo,
+.btn-get-started--header {
+  position: absolute;
+  top: 3.9rem;
+  z-index: 1;
+}
+.logo {
+  width: 11rem;
+  height: 2.7rem;
+  left: 16.6rem;
+}
+.header,
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 144rem;
+}
+.logo-ft {
+  width: 11rem;
+  height: 2.7rem;
+}
+.header {
+  background: #f2f2f2;
+  height: 83.7rem;
+  position: relative;
+}
+.footer {
+  background-color: #13183f;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4.5rem 16.5rem;
+  height: 12rem;
+}
+
+.hero-text-box {
+  max-width: 53%;
+  padding: 25.2rem 16.5rem;
+}
+.hero-img-box {
+  width: 47%;
+  margin: 0;
+  background-image: url("assets/image-hero-desktop.png");
+  background-repeat: no-repeat;
+  background-position: top -15rem right -35rem;
+}
+
+/* BUTTONS */
+
+.btn-get-started {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.3s;
+}
+.btn-get-started:hover {
+  box-shadow: 0px 15px 25px -5px rgba(darken(#f02aa6, 40%));
+  transform: scale(1.03);
+}
+.btn-get-started:active {
+  box-shadow: 0px 4px 8px rgba(darken(#f02aa6, 30%));
+  transform: scale(0.98);
+}
+.btn-get-started--hero,
+.btn-get-started--footer {
+  background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  border-radius: 31.5px;
+  width: 16.7rem;
+  height: 6.3rem;
+  padding: 1.9rem 2.4rem;
+}
+.btn-get-started--hero:hover,
+.btn-get-started--footer:hover {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%);
+}
+
+.btn-get-started--hero {
+  margin-top: 4rem;
+}
+.btn-get-started--header {
+  border-radius: 28px;
+  width: 16.7rem;
+  height: 5.6rem;
+  background: #13183f;
+  font-weight: 500;
+  font-size: 1.8rem;
+  padding: 1.4rem 3.2rem;
+  right: 16.6rem;
+}
+.btn-get-started--header:hover {
+  background: #666ca3;
+}
+
+.btn-get-started--courses {
+  color: #f74780;
+  text-align: left;
+}
+
+.heading-primary {
+  font-size: 5.6rem;
+  color: #13183f;
+  font-weight: 800;
+  line-height: 7.1rem;
+}
+
+.hero-description {
+  color: #83869a;
+  margin-top: 2.9rem;
+}
+
+/* SECTION COURSES */
+.section-courses {
+  width: 144rem;
+  height: 88.8rem;
+  padding: 2.4rem 16.5rem;
+}
+.grid {
+  display: grid;
+  row-gap: 8rem;
+  column-gap: 3rem;
+}
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+  gap: auto;
+}
+
+.course--main-card {
+  background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  color: #ffffff;
+  font-style: normal;
+  padding: 6.4rem 3.2rem;
+  font-weight: 800;
+  font-size: 2.4rem;
+  line-height: 4rem;
+}
+
+.course {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 15px;
+  width: 35rem;
+  height: 32.2rem;
+  transition: all 0.4s;
+}
+.course:hover {
+  transform: scale(1.05);
+}
+.course-img {
+  width: 5.6rem;
+  height: 5.6rem;
+  margin-left: 3.2rem;
+  transform: translateY(-50%);
+}
+.course-content {
+  height: 23rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 3.2rem;
+}
+.course-title {
+  font-size: 2.4rem;
+  font-weight: 800;
+  line-height: 3rem;
+  color: #13183f;
+}
+.course-desctiption {
+  color: #83869a;
+}
